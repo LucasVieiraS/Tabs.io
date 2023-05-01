@@ -18,7 +18,9 @@
 
         table {
             border-collapse: collapse;
-            margin: 20px;
+            border-collapse: separate;
+            border-radius: 6px;
+            margin-right: 30px;
         }
 
         table>* {
@@ -61,14 +63,6 @@
             border: none;
         }
 
-        .borderless-fret {
-            border: none;
-        }
-
-        .bold-top-fret {
-            border-top: solid 3px rgb(255, 255, 255);
-        }
-
         td>p {
             position: absolute;
             right: 5px;
@@ -95,16 +89,40 @@
             color: white;
         }
 
-        //td.muted {}
-
-        td.barre {
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
+        td.barre:nth-child(1) {
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
         }
 
         .card {
             height: 25rem;
             width: 20rem;
+        }
+
+        .borderless-fret {
+            border: none;
+            width: 0;
+            height: 0;
+        }
+
+        .bold-top-fret {
+            border-top: solid 3px rgb(255, 255, 255);
+        }
+
+        .bold-top-fret-first {
+            border-top-left-radius: 6px;
+        }
+
+        .bold-top-fret-last {
+            border-top-right-radius: 6px;
+        }
+
+        .bold-bottom-fret-first {
+            border-bottom-left-radius: 6px;
+        }
+
+        .bold-bottom-fret-last {
+            border-bottom-right-radius: 6px;
         }
     </style>
 </head>
@@ -131,7 +149,7 @@
                     <td id="string1-fret1" class="string borderless-fret">
                         <p>●</p>
                     </td>
-                    <td id="string2-fret1" class="string bold-top-fret">
+                    <td id="string2-fret1" class="string bold-top-fret bold-top-fret-first">
                         <p>●</p>
                     </td>
                     <td id="string3-fret1" class="string bold-top-fret">
@@ -143,7 +161,7 @@
                     <td id="string5-fret1" class="string bold-top-fret">
                         <p>●</p>
                     </td>
-                    <td id="string6-fret1" class="string bold-top-fret">
+                    <td id="string6-fret1" class="string bold-top-fret bold-top-fret-last">
                         <p>●</p>
                     </td>
                 </tr>
@@ -211,7 +229,7 @@
                     <td id="string1-fret5" class="string borderless-fret">
                         <p>●</p>
                     </td>
-                    <td id="string2-fret5" class="string">
+                    <td id="string2-fret5" class="string bold-bottom-fret-first">
                         <p>●</p>
                     </td>
                     <td id="string3-fret5" class="string">
@@ -223,7 +241,7 @@
                     <td id="string5-fret5" class="string">
                         <p>●</p>
                     </td>
-                    <td id="string6-fret5" class="string">
+                    <td id="string6-fret5" class="string bold-bottom-fret-last">
                         <p>●</p>
                     </td>
                 </tr>
