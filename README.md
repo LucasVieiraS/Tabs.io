@@ -4,11 +4,16 @@ Create tabs with few clicks, link your favorite streaming platforms then plug an
 
 ## TO-DO:
 
-    - Server:
-        - [ ] - Define Endpoints
+- Server:
+    - [ ] Draw Diagrams
+    - [ ] Setup Prisma
+    - [ ] Create Migrations
+    - [ ] Define Endpoints
+    - [ ] Queries
+    - [ ] User Authentication
 
-    - Web:
-        - [ ] - Define Endpoints
+- Web:
+    - [ ] ???
 
-    - Mobile:
-        - [ ] - Define Endpoints
+- Mobile:
+    - [ ] ???
